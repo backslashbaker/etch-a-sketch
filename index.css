@@ -1,7 +1,7 @@
+/* style.css */
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     width: 400px;
     /* adjust to your desired width */
     height: 400px;
@@ -9,7 +9,13 @@
 }
 
 .grid-cell {
-    /* optional: add some background color to see the grid */
-    border: 1px solid #000;
-    /* optional: add some border to see the grid */
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    border: 1px solid #ddd;
+    transition: background-color 0.2s ease;
+}
+
+.grid-cell.drawn {
+    background-color: #666;
 }
